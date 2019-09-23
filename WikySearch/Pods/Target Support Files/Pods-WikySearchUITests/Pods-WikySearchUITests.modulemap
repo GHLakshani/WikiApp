@@ -1,0 +1,6 @@
+framework module Pods_WikySearchUITests {
+  umbrella header "Pods-WikySearchUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F7A4B4EA129413D8202C12F /* Pods_WikySearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A9ABD95208FC5D71325866 /* Pods_WikySearchTests.framework */; };
+		35AE326C2536A51E2B661061 /* Pods_WikySearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384D8F2259962111746ED547 /* Pods_WikySearchUITests.framework */; };
+		3A2652913851F73A9DCB91C9 /* Pods_WikySearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBF50866EC241AAF4FFDCC9 /* Pods_WikySearch.framework */; };
+		6CB134A72335DD510064156C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB134A62335DD510064156C /* AppDelegate.swift */; };
+		6CB134A92335DD510064156C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB134A82335DD510064156C /* ViewController.swift */; };
+		6CB134AC2335DD510064156C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB134AA2335DD510064156C /* Main.storyboard */; };
+		6CB134AF2335DD510064156C /* WikySearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6CB134AD2335DD510064156C /* WikySearch.xcdatamodeld */; };
+		6CB134B12335DD530064156C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CB134B02335DD530064156C /* Assets.xcassets */; };
+		6CB134B42335DD530064156C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB134B22335DD530064156C /* LaunchScreen.storyboard */; };
+		6CB134BF2335DD530064156C /* WikySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB134BE2335DD530064156C /* WikySearchTests.swift */; };
+		6CB134CA2335DD530064156C /* WikySearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB134C92335DD530064156C /* WikySearchUITests.swift */; };
+		6CB134DB2335E3C70064156C /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB134D92335E3C70064156C /* CustomTableViewCell.swift */; };
+		6CB134DC2335E3C70064156C /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CB134DA2335E3C70064156C /* CustomTableViewCell.xib */; };
+		6CB134DE2335E49C0064156C /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB134DD2335E49C0064156C /* SearchResultsTableViewController.swift */; };
+		6CB134E02335F5640064156C /* APIRequestFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB134DF2335F5640064156C /* APIRequestFetcher.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CB134BB2335DD530064156C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CB1349B2335DD510064156C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CB134A22335DD510064156C;
+			remoteInfo = WikySearch;
+		};
+		6CB134C62335DD530064156C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CB1349B2335DD510064156C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CB134A22335DD510064156C;
+			remoteInfo = WikySearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17837516E4B6D441659B8AFD /* Pods-WikySearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikySearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-WikySearchUITests/Pods-WikySearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2732CCD826F32F864D8C80AD /* Pods-WikySearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikySearch.release.xcconfig"; path = "Target Support Files/Pods-WikySearch/Pods-WikySearch.release.xcconfig"; sourceTree = "<group>"; };
+		29A9ABD95208FC5D71325866 /* Pods_WikySearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WikySearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		384D8F2259962111746ED547 /* Pods_WikySearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WikySearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		541FF9A9CCCB2408471D98DE /* Pods-WikySearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikySearchTests.debug.xcconfig"; path = "Target Support Files/Pods-WikySearchTests/Pods-WikySearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5EBF50866EC241AAF4FFDCC9 /* Pods_WikySearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WikySearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CB134A32335DD510064156C /* WikySearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikySearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CB134A62335DD510064156C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6CB134A82335DD510064156C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6CB134AB2335DD510064156C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CB134AE2335DD510064156C /* WikySearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WikySearch.xcdatamodel; sourceTree = "<group>"; };
+		6CB134B02335DD530064156C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CB134B32335DD530064156C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6CB134B52335DD530064156C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CB134BA2335DD530064156C /* WikySearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikySearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CB134BE2335DD530064156C /* WikySearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikySearchTests.swift; sourceTree = "<group>"; };
+		6CB134C02335DD530064156C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CB134C52335DD530064156C /* WikySearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikySearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CB134C92335DD530064156C /* WikySearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikySearchUITests.swift; sourceTree = "<group>"; };
+		6CB134CB2335DD530064156C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CB134D92335E3C70064156C /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		6CB134DA2335E3C70064156C /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		6CB134DD2335E49C0064156C /* SearchResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewController.swift; sourceTree = "<group>"; };
+		6CB134DF2335F5640064156C /* APIRequestFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestFetcher.swift; sourceTree = "<group>"; };
+		C97CE206DBBE7CAC3CD34DA6 /* Pods-WikySearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikySearch.debug.xcconfig"; path = "Target Support Files/Pods-WikySearch/Pods-WikySearch.debug.xcconfig"; sourceTree = "<group>"; };
+		DFC0909279567BE7B75F44BC /* Pods-WikySearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikySearchUITests.release.xcconfig"; path = "Target Support Files/Pods-WikySearchUITests/Pods-WikySearchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F3813926B7F452D35834D196 /* Pods-WikySearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikySearchTests.release.xcconfig"; path = "Target Support Files/Pods-WikySearchTests/Pods-WikySearchTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CB134A02335DD510064156C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A2652913851F73A9DCB91C9 /* Pods_WikySearch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB134B72335DD530064156C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7A4B4EA129413D8202C12F /* Pods_WikySearchTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB134C22335DD530064156C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35AE326C2536A51E2B661061 /* Pods_WikySearchUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CB1349A2335DD510064156C = {
+			isa = PBXGroup;
+			children = (
+				6CB134A52335DD510064156C /* WikySearch */,
+				6CB134BD2335DD530064156C /* WikySearchTests */,
+				6CB134C82335DD530064156C /* WikySearchUITests */,
+				6CB134A42335DD510064156C /* Products */,
+				E9B7DBE0D152EDE657466206 /* Pods */,
+				9D037CE8A790BFE46AC8BB6F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6CB134A42335DD510064156C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CB134A32335DD510064156C /* WikySearch.app */,
+				6CB134BA2335DD530064156C /* WikySearchTests.xctest */,
+				6CB134C52335DD530064156C /* WikySearchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CB134A52335DD510064156C /* WikySearch */ = {
+			isa = PBXGroup;
+			children = (
+				6CB134A62335DD510064156C /* AppDelegate.swift */,
+				6CB134A82335DD510064156C /* ViewController.swift */,
+				6CB134AA2335DD510064156C /* Main.storyboard */,
+				6CB134B02335DD530064156C /* Assets.xcassets */,
+				6CB134B22335DD530064156C /* LaunchScreen.storyboard */,
+				6CB134B52335DD530064156C /* Info.plist */,
+				6CB134AD2335DD510064156C /* WikySearch.xcdatamodeld */,
+				6CB134D92335E3C70064156C /* CustomTableViewCell.swift */,
+				6CB134DA2335E3C70064156C /* CustomTableViewCell.xib */,
+				6CB134DD2335E49C0064156C /* SearchResultsTableViewController.swift */,
+				6CB134DF2335F5640064156C /* APIRequestFetcher.swift */,
+			);
+			path = WikySearch;
+			sourceTree = "<group>";
+		};
+		6CB134BD2335DD530064156C /* WikySearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				6CB134BE2335DD530064156C /* WikySearchTests.swift */,
+				6CB134C02335DD530064156C /* Info.plist */,
+			);
+			path = WikySearchTests;
+			sourceTree = "<group>";
+		};
+		6CB134C82335DD530064156C /* WikySearchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6CB134C92335DD530064156C /* WikySearchUITests.swift */,
+				6CB134CB2335DD530064156C /* Info.plist */,
+			);
+			path = WikySearchUITests;
+			sourceTree = "<group>";
+		};
+		9D037CE8A790BFE46AC8BB6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EBF50866EC241AAF4FFDCC9 /* Pods_WikySearch.framework */,
+				29A9ABD95208FC5D71325866 /* Pods_WikySearchTests.framework */,
+				384D8F2259962111746ED547 /* Pods_WikySearchUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9B7DBE0D152EDE657466206 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C97CE206DBBE7CAC3CD34DA6 /* Pods-WikySearch.debug.xcconfig */,
+				2732CCD826F32F864D8C80AD /* Pods-WikySearch.release.xcconfig */,
+				541FF9A9CCCB2408471D98DE /* Pods-WikySearchTests.debug.xcconfig */,
+				F3813926B7F452D35834D196 /* Pods-WikySearchTests.release.xcconfig */,
+				17837516E4B6D441659B8AFD /* Pods-WikySearchUITests.debug.xcconfig */,
+				DFC0909279567BE7B75F44BC /* Pods-WikySearchUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CB134A22335DD510064156C /* WikySearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CB134CE2335DD530064156C /* Build configuration list for PBXNativeTarget "WikySearch" */;
+			buildPhases = (
+				BF11AECAD65C17C3463CA5F2 /* [CP] Check Pods Manifest.lock */,
+				6CB1349F2335DD510064156C /* Sources */,
+				6CB134A02335DD510064156C /* Frameworks */,
+				6CB134A12335DD510064156C /* Resources */,
+				F1B781FF0B9DBBE5FAADF8CB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WikySearch;
+			productName = WikySearch;
+			productReference = 6CB134A32335DD510064156C /* WikySearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6CB134B92335DD530064156C /* WikySearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CB134D12335DD530064156C /* Build configuration list for PBXNativeTarget "WikySearchTests" */;
+			buildPhases = (
+				ED5959CB699CEE8C2F885157 /* [CP] Check Pods Manifest.lock */,
+				6CB134B62335DD530064156C /* Sources */,
+				6CB134B72335DD530064156C /* Frameworks */,
+				6CB134B82335DD530064156C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CB134BC2335DD530064156C /* PBXTargetDependency */,
+			);
+			name = WikySearchTests;
+			productName = WikySearchTests;
+			productReference = 6CB134BA2335DD530064156C /* WikySearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6CB134C42335DD530064156C /* WikySearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CB134D42335DD530064156C /* Build configuration list for PBXNativeTarget "WikySearchUITests" */;
+			buildPhases = (
+				20A5261494CFCE0FF5A63B9B /* [CP] Check Pods Manifest.lock */,
+				6CB134C12335DD530064156C /* Sources */,
+				6CB134C22335DD530064156C /* Frameworks */,
+				6CB134C32335DD530064156C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CB134C72335DD530064156C /* PBXTargetDependency */,
+			);
+			name = WikySearchUITests;
+			productName = WikySearchUITests;
+			productReference = 6CB134C52335DD530064156C /* WikySearchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CB1349B2335DD510064156C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Supun Srilal-COBSCComp171p-005";
+				TargetAttributes = {
+					6CB134A22335DD510064156C = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					6CB134B92335DD530064156C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6CB134A22335DD510064156C;
+					};
+					6CB134C42335DD530064156C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6CB134A22335DD510064156C;
+					};
+				};
+			};
+			buildConfigurationList = 6CB1349E2335DD510064156C /* Build configuration list for PBXProject "WikySearch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CB1349A2335DD510064156C;
+			productRefGroup = 6CB134A42335DD510064156C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CB134A22335DD510064156C /* WikySearch */,
+				6CB134B92335DD530064156C /* WikySearchTests */,
+				6CB134C42335DD530064156C /* WikySearchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CB134A12335DD510064156C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB134B42335DD530064156C /* LaunchScreen.storyboard in Resources */,
+				6CB134B12335DD530064156C /* Assets.xcassets in Resources */,
+				6CB134DC2335E3C70064156C /* CustomTableViewCell.xib in Resources */,
+				6CB134AC2335DD510064156C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB134B82335DD530064156C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB134C32335DD530064156C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20A5261494CFCE0FF5A63B9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WikySearchUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF11AECAD65C17C3463CA5F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WikySearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED5959CB699CEE8C2F885157 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WikySearchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1B781FF0B9DBBE5FAADF8CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WikySearch/Pods-WikySearch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WikySearch/Pods-WikySearch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WikySearch/Pods-WikySearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CB1349F2335DD510064156C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB134E02335F5640064156C /* APIRequestFetcher.swift in Sources */,
+				6CB134A92335DD510064156C /* ViewController.swift in Sources */,
+				6CB134AF2335DD510064156C /* WikySearch.xcdatamodeld in Sources */,
+				6CB134DE2335E49C0064156C /* SearchResultsTableViewController.swift in Sources */,
+				6CB134DB2335E3C70064156C /* CustomTableViewCell.swift in Sources */,
+				6CB134A72335DD510064156C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB134B62335DD530064156C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB134BF2335DD530064156C /* WikySearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB134C12335DD530064156C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB134CA2335DD530064156C /* WikySearchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CB134BC2335DD530064156C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CB134A22335DD510064156C /* WikySearch */;
+			targetProxy = 6CB134BB2335DD530064156C /* PBXContainerItemProxy */;
+		};
+		6CB134C72335DD530064156C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CB134A22335DD510064156C /* WikySearch */;
+			targetProxy = 6CB134C62335DD530064156C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6CB134AA2335DD510064156C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CB134AB2335DD510064156C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6CB134B22335DD530064156C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CB134B32335DD530064156C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CB134CC2335DD530064156C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6CB134CD2335DD530064156C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6CB134CF2335DD530064156C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C97CE206DBBE7CAC3CD34DA6 /* Pods-WikySearch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WikySearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "COBSCComp171p-005.WikySearch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6CB134D02335DD530064156C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2732CCD826F32F864D8C80AD /* Pods-WikySearch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WikySearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "COBSCComp171p-005.WikySearch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6CB134D22335DD530064156C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 541FF9A9CCCB2408471D98DE /* Pods-WikySearchTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WikySearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "COBSCComp171p-005.WikySearchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WikySearch.app/WikySearch";
+			};
+			name = Debug;
+		};
+		6CB134D32335DD530064156C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3813926B7F452D35834D196 /* Pods-WikySearchTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WikySearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "COBSCComp171p-005.WikySearchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WikySearch.app/WikySearch";
+			};
+			name = Release;
+		};
+		6CB134D52335DD530064156C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17837516E4B6D441659B8AFD /* Pods-WikySearchUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WikySearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "COBSCComp171p-005.WikySearchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WikySearch;
+			};
+			name = Debug;
+		};
+		6CB134D62335DD530064156C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFC0909279567BE7B75F44BC /* Pods-WikySearchUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WikySearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "COBSCComp171p-005.WikySearchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WikySearch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CB1349E2335DD510064156C /* Build configuration list for PBXProject "WikySearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CB134CC2335DD530064156C /* Debug */,
+				6CB134CD2335DD530064156C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CB134CE2335DD530064156C /* Build configuration list for PBXNativeTarget "WikySearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CB134CF2335DD530064156C /* Debug */,
+				6CB134D02335DD530064156C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CB134D12335DD530064156C /* Build configuration list for PBXNativeTarget "WikySearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CB134D22335DD530064156C /* Debug */,
+				6CB134D32335DD530064156C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CB134D42335DD530064156C /* Build configuration list for PBXNativeTarget "WikySearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CB134D52335DD530064156C /* Debug */,
+				6CB134D62335DD530064156C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6CB134AD2335DD510064156C /* WikySearch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6CB134AE2335DD510064156C /* WikySearch.xcdatamodel */,
+			);
+			currentVersion = 6CB134AE2335DD510064156C /* WikySearch.xcdatamodel */;
+			path = WikySearch.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6CB1349B2335DD510064156C /* Project object */;
+}
